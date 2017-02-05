@@ -18,3 +18,11 @@ html, body
   height: 95%;
   width: 50%;
 }
+
+#critique-message
+{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 3em;
+  margin: 20% auto 0;
+  width: 50%;
+}
