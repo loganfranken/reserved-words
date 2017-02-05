@@ -1,0 +1,20 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+#artwork
+{
+  float: left;
+  height: 95%;
+  width: 50%;
+}
+
+#critique
+{
+  float: right;
+  height: 95%;
+  width: 50%;
+}
