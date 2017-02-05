@@ -1,0 +1,117 @@
+#container
+{
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.panel
+{
+  height: 18.75em;
+  width: 18.75em;
+}
+
+#speaker
+{
+  background:
+    radial-gradient(#111 2%, transparent 2%) 0 0,
+
+    radial-gradient(#111 2%, transparent 2%) -1em -1em,
+    radial-gradient(#111 2%, transparent 2%) 1em -1em,
+    radial-gradient(#111 2%, transparent 2%) -1em 1em,
+    radial-gradient(#111 2%, transparent 2%) 1em 1em,
+
+    radial-gradient(#111 2%, transparent 2%) -2em 0em,
+    radial-gradient(#111 2%, transparent 2%) 2em 0em,
+    radial-gradient(#111 2%, transparent 2%) 0em 2em,
+    radial-gradient(#111 2%, transparent 2%) 0em -2em,
+
+    radial-gradient(#111 2%, transparent 2%) -2.5em -1.5em,
+    radial-gradient(#111 2%, transparent 2%) 2.5em -1.5em,
+    radial-gradient(#111 2%, transparent 2%) -2.5em 1.5em,
+    radial-gradient(#111 2%, transparent 2%) 2.5em 1.5em,
+
+    radial-gradient(#111 2%, transparent 2%) -1.5em -2.5em,
+    radial-gradient(#111 2%, transparent 2%) 1.5em -2.5em,
+    radial-gradient(#111 2%, transparent 2%) -1.5em 2.5em,
+    radial-gradient(#111 2%, transparent 2%) 1.5em 2.5em,
+
+    radial-gradient(#111 2%, transparent 2%) -3.5em 0,
+    radial-gradient(#111 2%, transparent 2%) 3.5em 0,
+    radial-gradient(#111 2%, transparent 2%) 0 3.5em,
+    radial-gradient(#111 2%, transparent 2%) 0 -3.5em;
+
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-size: 18.75em 18.75em;
+}
+
+#touchscreen
+{
+  background: #0A0A0A;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+
+#touchscreen button
+{
+  background: #0A0A0A;
+  border: 3px solid #FFF;
+  border-radius: 10em;
+  color: #0A0A0A;
+  cursor: pointer;
+  display: block;
+  height: 20%;
+  margin: 40% auto 0;
+  outline: 0;
+  overflow: hidden;
+  position: relative;
+  text-indent: -1000em;
+  transition: opacity 0.5s;
+  width: 20%;
+}
+
+#touchscreen button.hidden
+{
+  cursor: default;
+  opacity: 0;
+}
+
+#touchscreen #instruction
+{
+  color: #FFF;
+  font-family: monospace;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 1em 0;
+}
+
+#button-loading
+{
+  background: #FFF;
+  bottom: 0;
+  color: #0A0A0A;
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 40em)
+{
+  #container
+  {
+    margin-top: 5em;
+    width: 40em;
+  }
+
+  #speaker
+  {
+    float: left;
+  }
+
+  #touchscreen
+  {
+    float: right;
+  }
+}
