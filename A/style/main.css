@@ -9,3 +9,20 @@ html, body, #screen
   margin: 0;
   width: 100%;
 }
+
+#loading-bar-container
+{
+  background: #222;
+  height: 1%;
+  min-height: 0.5em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#loading-bar
+{
+  background: #EEE;
+  height: 100%;
+  width: 0;
+}

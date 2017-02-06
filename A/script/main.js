@@ -15,18 +15,23 @@ const loadFrame = (index) => {
 
     canvas.getContext('2d').drawImage(image, 0, 0);
 
-    onLoadedFrame(canvas.toDataURL(), index);
+    onLoadedFrame(canvas.toDataURL('image/jpeg'), index);
 
   };
 
 }
 
+const loadingBar = document.getElementById('loading-bar');
+const loadingBarContainer = document.getElementById('loading-bar-container');
+
 const onLoadedFrame = (image, index) => {
 
   frames[index] = image;
+  loadingBar.setAttribute('style', `width: ${(frames.length/maxFrames) * 100}%;`);
 
   if(frames.length >= maxFrames)
   {
+    loadingBarContainer.setAttribute('style', 'display: none;');
     onAllFramesLoaded();
   }
 
