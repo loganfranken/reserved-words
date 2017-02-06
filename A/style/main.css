@@ -1,0 +1,11 @@
+html, body
+{
+  background: #0A0A0A;
+}
+
+html, body, #screen
+{
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
