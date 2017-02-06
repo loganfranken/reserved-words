@@ -27,9 +27,15 @@ const loadingBarContainer = document.getElementById('loading-bar-container');
 const onLoadedFrame = (image, index) => {
 
   frames[index] = image;
-  loadingBar.setAttribute('style', `width: ${(frames.length/maxFrames) * 100}%;`);
 
-  if(frames.length >= maxFrames)
+  // Get a count of loaded frames
+  let loadedFrames = frames.reduce((count, frame) => (frame ? (count + 1) : 0), 0);
+
+  // Update the loading bar
+  loadingBar.setAttribute('style', `width: ${(loadedFrames/maxFrames) * 100}%;`);
+
+  // See if we've finished loading all images
+  if(loadedFrames >= maxFrames)
   {
     loadingBarContainer.setAttribute('style', 'display: none;');
     onAllFramesLoaded();
