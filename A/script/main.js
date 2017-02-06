@@ -15,7 +15,7 @@ const loadFrame = (index) => {
 
     canvas.getContext('2d').drawImage(image, 0, 0);
 
-    onLoadedFrame(canvas.toDataURL('image/jpeg'), index);
+    onLoadedFrame(canvas.toDataURL('image/jpeg', 0.5), index);
 
   };
 
