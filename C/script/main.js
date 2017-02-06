@@ -2,6 +2,12 @@
 
 (() => {
 
+  if(!window.speechSynthesis)
+  {
+    document.getElementById('container').setAttribute('style', 'display: none');
+    return;
+  }
+
   const hasRevealedSecretKey = 'hasRevealedSecret';
   const button = document.querySelector('#touchscreen button');
   const buttonLoader = document.querySelector('#touchscreen button #button-loading');
